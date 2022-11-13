@@ -1,8 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import firebase from "firebase";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, FlatList, View, SafeAreaView } from "react-native";
+/* lib */
 import { getShops } from "./src/lib/firebase";
+/* components */
+import { ShopReviewItem } from "./src/components/ShopReviewItem";
+/* types */
 import { Shop } from "./types/shops";
 
 export default function App() {
@@ -18,17 +22,23 @@ export default function App() {
   };
 
   const shopItems = shops.map((shop, index) => (
-    <View style={{ margin: 10 }} key={index.toString()}>
-      <Text>{shop.name}</Text>
-      <Text>{shop.place}</Text>
-    </View>
+    <ShopReviewItem shop={shop} key={index.toString()} />
   ));
 
   return (
-    <View style={styles.container}>
-      {shopItems}
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      z
+      <View style={styles.container}>
+        <FlatList
+          data={shops}
+          renderItem={({ item }: { item: Shop }) => (
+            <ShopReviewItem shop={item} />
+          )}
+          keyExtractor={(item, index) => index.toString()}
+          numColumns={2}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
 

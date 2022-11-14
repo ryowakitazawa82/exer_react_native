@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 /* types */
-import { Shop } from "../../types/shops";
+import { Shop } from "../../types/shop";
 /* components */
 import { Stars } from "./Stars";
 

@@ -9,7 +9,7 @@ import {
   REACT_APP_MEASUREMENT_ID,
 } from "react-native-dotenv";
 /* types */
-import { Shop } from "../../types/shops";
+import { Shop } from "../../types/shop";
 
 if (!firebase.apps.length) {
   const firebaseConfig = {

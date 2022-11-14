@@ -28,7 +28,7 @@ export const HomeScreen = ({ navigation }: Props) => {
   };
 
   const onPressShop = (shop:Shop) => {
-    navigation.navigate("shop",{shop});
+    navigation.navigate("Shop",{shop});
   };
 
   return (

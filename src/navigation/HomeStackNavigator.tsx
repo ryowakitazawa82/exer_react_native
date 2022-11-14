@@ -16,7 +16,7 @@ export const HomeStackNavigator = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="shop" component={ShopScreen} />
+      <Stack.Screen name="Shop" component={ShopScreen} />
     </Stack.Navigator>
   );
 };

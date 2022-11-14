@@ -8,8 +8,8 @@ import { RootStackParamList } from "../../types/navigation";
 import { StackNavigationProp } from "@react-navigation/stack";
 
 type Props = {
-  navigation: StackNavigationProp<RootStackParamList, "shop">;
-  route: RouteProp<RootStackParamList, "shop">;
+  navigation: StackNavigationProp<RootStackParamList, "Shop">;
+  route: RouteProp<RootStackParamList, "Shop">;
 };
 
 export const ShopScreen: React.FC<Props> = ({ navigation, route }: Props) => {

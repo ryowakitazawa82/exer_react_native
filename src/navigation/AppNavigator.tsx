@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 /* navigator */
-import { HomeStackNavigator } from "./HomeStackNavigator";
+import { MainTabNavigator } from "./MainTabNavigator";
 /* screens */
 
 /* contexts */
@@ -9,7 +9,7 @@ import { HomeStackNavigator } from "./HomeStackNavigator";
 export const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <HomeStackNavigator />
+      <MainTabNavigator />
     </NavigationContainer>
   );
 };

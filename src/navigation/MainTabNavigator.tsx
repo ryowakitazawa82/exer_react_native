@@ -21,8 +21,7 @@ export const MainTabNavigator = () => {
           }}
         />
         <Tab.Screen
-          name="User"
-          component={UserScreen}
+          name="User" navigation={UserScreen}
           options={{
             tabBarLabel: "User",
             tabBarIcon: ({ color, size }) => (
